@@ -1,28 +1,12 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        nuxt
-      </h1>
-      <h2 class="subtitle">
-        My dazzling Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div class="nav1">
+        <div>
+          <h1>this first page</h1>
+          <h2>{{uv}}</h2>
+          <button @click="addTodo">add</button>
+        </div>
       </div>
     </div>
   </div>
@@ -34,7 +18,17 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  computed: {
+    uv () {
+      return this.$store.state.uv
+    }
+  },
+  methods: {
+    addTodo (e) {
+      this.$store.commit('addUv')
+    }
+  },
 }
 </script>
 
@@ -49,8 +43,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
