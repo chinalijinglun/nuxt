@@ -3,7 +3,7 @@
     <div class="header-nav">
       <h1>
         <a href="">
-          <img src="~/static/apple-touch-icon-180x180.png" alt="">
+          <img src="~/static/apple-touch-icon-180x180.png" alt="" />
         </a>
       </h1>
       <div class="nav">
@@ -20,9 +20,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
@@ -32,13 +30,14 @@ export default {
   height: 100%;
 }
 .header-nav {
-  width: 1200px;
+  max-width: 1200px;
   height: 70px;
   margin: 0 auto;
   overflow: hidden;
 }
 .header-nav h1 {
   float: left;
+  margin: 3px 0 0 0;
 }
 .header-nav h1 a img {
   width: 80px;
