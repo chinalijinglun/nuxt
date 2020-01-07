@@ -19,38 +19,36 @@
       <h2>{{uv}}</h2>
       <button @click="addTodo">add</button>
     </div>
-  </div> -->
+  </div>-->
 </template>
 
 <script>
-import Header from '~/components/header.vue'
+import Header from "~/components/header.vue";
 
 export default {
   components: {
     Header
   },
   computed: {
-    uv () {
-      return this.$store.state.uv
+    uv() {
+      return this.$store.state.uv;
     }
   },
   methods: {
-    onChange (a, b, c) {
+    onChange(a, b, c) {
       console.log(a, b, c);
     },
-    addTodo (e) {
-      this.$store.commit('addUv')
+    addTodo(e) {
+      this.$store.commit("addUv");
     }
   },
-  head () {
+  head() {
     return {
       title: this.title,
-      meta: [
-        { hid: 'description', name: 'home', content: '主页面' }
-      ]
-    }
+      meta: [{ hid: "description", name: "home", content: "主页面" }]
+    };
   }
-}
+};
 </script>
 
 <style scoped>
@@ -65,8 +63,8 @@ export default {
 /* For demo */
 .ant-carousel >>> .slick-slide {
   text-align: center;
-  height: 160px;
-  line-height: 160px;
+  height: 500px;
+  line-height: 500px;
   background: #364d79;
   overflow: hidden;
 }
