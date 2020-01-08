@@ -1,0 +1,21 @@
+.wedo_work {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  height: 100px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.title h1 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 25px 0 25px;
+}
+.title img {
+  width: 14px;
+  height: 19px;
+}

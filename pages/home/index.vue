@@ -1,17 +1,19 @@
 <template>
   <div class="container">
     <Wedo></Wedo>
+    <Case />
   </div>
 </template>
 
 <script>
 import Header from "~/components/header.vue";
 import Wedo from "~/components/Wedo.vue";
-
+import Case from "~/components/Case.vue";
 export default {
   components: {
     Header,
-    Wedo
+    Wedo,
+    Case
   },
   computed: {},
   methods: {},

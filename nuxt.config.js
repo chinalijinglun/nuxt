@@ -24,7 +24,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    // "ant-design-vue/dist/antd.css"
+    "~static/common.css",
     {
       src: "./assets/scss/index.scss",
       lang: "sass"

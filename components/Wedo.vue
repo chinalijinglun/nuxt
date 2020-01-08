@@ -62,7 +62,6 @@ export default {};
 .wedo_work {
   width: 1200px;
   margin: 0 auto;
-  height: 500px;
 }
 .title {
   height: 100px;
@@ -117,7 +116,6 @@ export default {};
   margin-top: 65px;
   margin-bottom: 48px;
   font-size: 50px;
-  color: #ff0000;
 }
 .wedo-content {
   text-align: center;
