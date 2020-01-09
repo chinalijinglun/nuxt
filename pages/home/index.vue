@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import Header from "~/components/header.vue";
 import Wedo from "~/components/Wedo.vue";
 import Case from "~/components/Case.vue";
@@ -22,6 +24,11 @@ export default {
       title: this.title,
       meta: [{ hid: "description", name: "home", content: "主页面" }]
     };
+  },
+  async asyncData() {
+    let { data } = await axios.get("https://api.myjson.com/bins/mr6ma");
+    console.log(data);
+    return { info: data.name };
   }
 };
 </script>

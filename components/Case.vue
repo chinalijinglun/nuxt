@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="case-content">
-      <a href="">{{ info }} </a>
+      <a href="">{{ username }} </a>
     </div>
   </div>
 </template>
@@ -55,19 +55,8 @@ export default {
           font: "产品拍摄"
         }
       ]
+      // info: []
     };
-  },
-  async asyncData({ params }) {
-    // const { data } = await axios.get(`http://localhost:3000/json/case.json`);
-    // return { title: data.result };
-    return axios({
-      method: "get",
-      url: "https://api.myjson.com/bins/1dkbio"
-    }).then(function(response) {
-      console.log(response.data);
-      return { info: response.data };
-      error(params);
-    });
   }
 };
 </script>
